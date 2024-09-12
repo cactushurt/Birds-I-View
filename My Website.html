@@ -6,19 +6,26 @@
     <title> Home page of Birds I View.com </title>
     <link rel="icon" href="data:,">
     <style> body {
-  background: #4F4F4F;
+  background-image: url("Background.jpg");
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image in the viewport */
+  height: 100vh; /* Ensures the body takes up the full viewport height */
   max-width: 650px;
   margin: 0 auto;
   padding: 10px;
   line-height: 1.4;
   font-size: 18px;
   font-family: sans-serif;
-  color: #1C3300;
+  color: #A9DF98;
 }
+
+/* #97DEA2 minty green #4C4C4C grey #A9DF98 more green #DEDC97 beige #97DEBA blue */
+
 
 footer {
   padding: 1rem 0;
-  border-top: solid 2px #000000;
+  border-top: solid 2px #ffffff;
 }
 
 img {
@@ -29,7 +36,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #97DEBA;
 }
 
 a:hover {
@@ -56,7 +63,7 @@ code {
   overflow-x: auto;
   padding: 0.5em;
   margin: 0.5em 0;
-  border: solid 1px #000000;
+  border: solid 1px #ffffff;
 }
 
 hr {
@@ -71,33 +78,22 @@ table {
 }
 
 td, th {
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   text-align: start;
   padding: 0.5rem;
 }
 
 th {
-  background-color: #000000;
+  background-color: #ffffff;
   font-weight: bold;
 } </style>
   </head>
   <body>
-    <main> <h1>Home page of Birds I View.com</h1>
-<p>Hi! My name is Jared Froese. I'm a cybersecurity student hoping to use my education to help you keep your hoem safe from unwanted content online 
+    <main> <IMG SRC="Logo.png" alt="Logo" />
+<p>Hi! My name is Jared Froese. I'm a cybersecurity student hoping to use my education to help you keep your home safe from unwanted content online 
     <a href=tel:"2269983142">Call</a>. Here you can find my number for further questions. Or if you prefer my email <a href="mailto: froesejared@gmail.com">Email</a> </p>
 <h2>Projects</h2>
 <ul>
-<li>
-<p><a href="https://github.com/ukarim/smppgui">smppgui</a> - cross-platform smpp gui client. The idea
-of this tool is not mine. This smpp client was created as a result of an email I received
-from Georgiy (engineer from Kcell VAS operations team).</p>
-</li>
-<li>
-<p><a href="https://github.com/ukarim/ngx_markdown_filter_module">ngx_markdown_filter_module</a> -
-nginx module for rendering markdown files as html on-the-fly. I've written this module
-in order to use it for this website. But now I just pre-compile markdown files and serve
-them as plain html files.</p>
-</li>
 <li>
 <p><a href="https://github.com/ukarim/smscsim">smscsim</a> - lightweight smpp smsc simulator. I began
 this project when I was working on the http sms gateway. There were a bunch of other smpp
@@ -117,7 +113,7 @@ So I decided to create this program.</p>
         -
         <a href="https://github.com/ukarim">github</a>
         -
-        Contacts: mail at ukarim dot com
+        Contacts: mail froesejared@gmail.com
       </nav>
     </footer>
   
