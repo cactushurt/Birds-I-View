@@ -6,8 +6,6 @@
     <meta name="description" content="Guardian Digital Surveillance - Keeping your child safe online with parental controls and education on internet safety.">
     <title>Guardian Digital Surveillance</title>
     <style>
-        
-      
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,14 +15,15 @@
             height: 100vh;
             background-image: url("background.png");
             background-position: top;
-            background-size: 100%;
-            background-repeat: repeat;
+            background-size: cover; /* Changed to cover for better fitting */
+            background-repeat: no-repeat; /* No repeat */
+            position: relative; /* Added to contain absolutely positioned elements */
         }
         header {
             display: flex;
             align-items: center;
             padding: 10px 20px;
-            background-color: rgba(235, 213, 173, .8);
+            background-color: rgba(235, 213, 173, 0.8);
         }
         header img {
             height: 90px;
@@ -36,7 +35,7 @@
             font-size: 24px;
         }
         main {
-            min-height: calc(100vh - 100px);
+            flex: 1; /* Allows the main section to fill available space */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,20 +43,23 @@
             text-align: center;
         }
         footer {
-            display: flex; /* Use flexbox */
+            position: absolute; /* Fixed position for footer */
+            bottom: -780px; /* Adjust as needed for vertical positioning */
+            left: 20%; /* Center horizontally */
+            transform: translateX(-50%); /* Center alignment correction */
+            display: flex;
             flex-direction: column;
-            justify-content: center; /* Center other content */
             align-items: center; /* Vertically center items */
-            margin-top: 1427px;
-            margin-right: 580px;
+            padding: 10px; /* Padding for spacing */
         }
         .footer-left {
-            font-size: 30px;
+            font-size: 20px; /* Adjusted for consistency */
+            margin: 5px 0; /* Space between items */
         }
         .footer-leftunder{
-            font-size: 30px;
-            margin-top: -30px;
-            margin-right: 170px;
+            margin-right: 10%;
+            font-size: 20px; /* Adjusted for consistency */
+            margin: 5px 0; /* Space between items */
         }
         /* Media query for mobile devices */
         @media (max-width: 600px) {
@@ -71,7 +73,7 @@
                 font-size: 18px; /* Smaller heading for mobile */
             }
             main p {
-                font-size: 18px; /* Adjusted paragraph size */
+                font-size: 16px; /* Adjusted paragraph size */
             }
         }
     </style>
@@ -90,16 +92,15 @@
         <p>That is where Guardian Digital Surveillance comes in.</p> 
         <p>We are here to talk with you and help you keep your child safe through parental blockers and proper education on internet safety.</p>
     </div>
-</main>
- -->
+</main> -->
+
 <footer>
     <div class="footer-left">
-        <p><a href="mailto:froesejared@guardiands.ca">froesejared@guardiands.ca</a></p>
+        <p><a style="text-decoration: none;" href="mailto:froesejared@guardiands.ca">froesejared@guardiands.ca</a></p>
     </div>
     <div class="footer-leftunder">
-        <p><a href="tel:2269983142">(226) 998-3142</a></p>
+        <p><a style="text-decoration: none;" href="tel:2269983142">(226) 998-3142&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;</a></p>
     </div>
-    </footer>
 </footer>
 
 </body>
