@@ -12,80 +12,130 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            height: 80vw;
-            background-image: url("background.png");
+            max-height: 100vh; /* Set height to full viewport */
+            max-width: 100vw;
+            background-color: aliceblue;
             background-position: top;
-            background-size: cover; /* Changed to cover for better fitting */
-            background-repeat: no-repeat; /* No repeat */
-            position: relative; /* Added to contain absolutely positioned elements */
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
         }
         header {
             display: flex;
             align-items: center;
-            padding: 10px 20px;
-            background-color: rgba(235, 213, 173, 0.8);
         }
         header img {
-            height: 90px;
-            margin-right: 20px;
+            height: 20vw;
+            margin-right: 1vw;
+            margin-top: -2vw;
             z-index: 1000;
         }
         header h1 {
-            margin: 0;
-            font-size: 24px;
+            margin-right: 4vw;
+            margin-top: -2vw;
+            font-size: .208vw;
+            color: white;
+            z-index: 1000;
+            
         }
         main {
-            flex: 1; /* Allows the main section to fill available space */
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 50px 20px; /* Reduced padding for mobile */
+            padding: 50px 20px;
             text-align: center;
         }
         footer {
-            position: absolute; /* Fixed position for footer */
-            bottom: -54vw; /* Adjust as needed for vertical positioning */
-            left: 22vw; /* Center horizontally */
-            transform: translateX(-50%); /* Center alignment correction */
+            position: absolute;
+            bottom: -54vw;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             flex-direction: column;
-            align-items: center; /* Vertically center items */
-            padding: 5vw; /* Padding for spacing */
+            align-items: center;
+            padding: 0vw;
             background-color: transparent;
         }
         .footer-left {
-            font-size: 2vw; /* Adjusted for consistency */
-            margin: -.5vw; /* Space between items */
+            font-size: 2vw;
+            margin: -.5vw;
         }
-        .footer-leftunder{
+        .footer-leftunder {
             margin-right: 10vw;
-            font-size: 2vw; /* Adjusted for consistency */
-             /* Space between items */
+            font-size: 2vw;
         }
-        /* Media query for mobile devices */
+        a {
+            text-decoration: none;
+            color: white; /* Inherit color from parent */
+        }
         @media (max-width: 600px) {
-            
             header h1 {
-                font-size: 20px;
+                font-size: 2vw;
             }
             main {
-                padding: 30px 10px; /* Further reduced padding */
+                padding: 30px 10px;
             }
             main h2 {
-                font-size: 18px; /* Smaller heading for mobile */
+                font-size: 18px;
             }
             main p {
-                font-size: 16px; /* Adjusted paragraph size */
+                font-size: 16px;
             }
+        }
+        /* Top-left image */
+        .top-left {
+            position: absolute; /* Position it absolutely */
+            top: 0vw; /* Align to the top */
+            left: 0vw; /* Align to the left */
+        }
+        .top-left img {
+            height: 50vw; /* Adjust the height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+        .bottom-left {
+            position: absolute; /* Position it absolutely */
+            bottom: -110vw; /* Align to the bottom */
+            left: 42.7vw; /* Align to the left */
+            overflow: hidden;
+        }
+        .bottom-left img {
+            display: block;
+            height: 80vw; /* Adjust the height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+        .middle-circle img {
+            position: absolute;
+            bottom: -110vw;
+            right: 3vw;
+        }
+        .middle-circle img {
+            height: 30vw;
+            width: auto;
         }
     </style>
 </head>
 <body>
 
-<!-- <header>
+<header>
     <img src="Logo.png" alt="Guardian Digital Surveillance Logo">
-    <h1>Guardian Digital Surveillance</h1>
-</header> -->
+    <h1>Guardian Digital <br />
+    <span>&nbsp;&nbsp;&nbsp;Surveillance</span>
+    </h1>
+</header> 
+
+<div class="top-left">
+    <img src="gold.png" alt="Gold Image">
+</div><p>Services</p>
+
+
+<div class="bottom-left">
+    <img src="grayside.png" alt="Gray Side Image">
+</div>
+
+<div class="middle-circle">
+    <img src="bluecircle.png" alt="Blue Circle Image">
+</div>
 
 <!-- <main>
     <div>
@@ -98,10 +148,10 @@
 
 <footer>
     <div class="footer-left">
-        <p><a style="text-decoration: none;" href="mailto:froesejared@guardiands.ca">froesejared@guardiands.ca</a></p>
+        <p><a href="mailto:froesejared@guardiands.ca">froesejared@guardiands.ca</a></p>
     </div>
     <div class="footer-leftunder">
-        <p><a style="text-decoration: none;" href="tel:2269983142">(226) 998-3142</a></p>
+        <p><a href="tel:2269983142">(226) 998-3142</a></p>
     </div>
 </footer>
 
