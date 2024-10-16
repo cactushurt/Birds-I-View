@@ -48,12 +48,11 @@
         }
         footer {
             position: absolute;
-            bottom: -54vw;
-            left: 50%;
-            transform: translateX(-50%);
+            bottom: -110vw;
+            left: 4vw;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: left;
             padding: 0vw;
             background-color: transparent;
         }
@@ -67,7 +66,7 @@
         }
         a {
             text-decoration: none;
-            color: white; /* Inherit color from parent */
+            color: blue; /* Inherit color from parent */
         }
         @media (max-width: 600px) {
             header h1 {
@@ -104,7 +103,7 @@
             height: 80vw; /* Adjust the height as needed */
             width: auto; /* Maintain aspect ratio */
         }
-        .middle-circle img {
+        .middle-circle {
             position: absolute;
             bottom: -110vw;
             right: 3vw;
@@ -113,6 +112,40 @@
             height: 30vw;
             width: auto;
         }
+        .circle-text {
+            position: absolute;
+            bottom: -103vw;
+            right: 9.5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vw;
+            margin: -1;
+            line-height: .02vw;
+        }
+        .bold-heading {
+            position: absolute;
+            bottom: -30vw;
+            right: 14vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 4vw;
+            margin: -1;
+            line-height: .02vw;
+        }
+        .about-us {
+            position: absolute;
+            bottom: -70vw;
+            right: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vw;
+            margin: -1;
+            line-height: .02vw;
+        }
+
     </style>
 </head>
 <body>
@@ -126,8 +159,7 @@
 
 <div class="top-left">
     <img src="gold.png" alt="Gold Image">
-</div><p>Services</p>
-
+</div>
 
 <div class="bottom-left">
     <img src="grayside.png" alt="Gray Side Image">
@@ -135,6 +167,28 @@
 
 <div class="middle-circle">
     <img src="bluecircle.png" alt="Blue Circle Image">
+</div>
+
+<div class="circle-text">
+    <h1>Services</h1>
+    <p>Content Blocking</p>
+    <p>Screen Timers</p>
+    <p>Application Blocking</p>
+    <p>Internet Monitoring</p>
+</div>
+
+<div class="bold-heading">
+    <h1>Parental Controls </h1>
+    <h1>Made Easy</h1>
+</div>
+
+<div class="about-us">
+    <h1>About Us</h1>
+    <p>At Guardian Digital Surveillance, we provide personalized and simple</p>
+    <p>parental controls to help keep your children safe online. Our easy-to-use </p>
+    <p>solutions are designed for your family’s unique needs, giving you</p>
+    <p>peace of mind as your child explores the digital world. Let’s </p>
+    <p>create a safer online environment together!</p>
 </div>
 
 <!-- <main>
@@ -148,10 +202,11 @@
 
 <footer>
     <div class="footer-left">
-        <p><a href="mailto:froesejared@guardiands.ca">froesejared@guardiands.ca</a></p>
+        <h1>Contact us</h1>
+        <p>Email: <a href="mailto:froesejared@guardiands.ca">froesejared@guardiands.ca</a></p>
     </div>
     <div class="footer-leftunder">
-        <p><a href="tel:2269983142">(226) 998-3142</a></p>
+        <p>Call: <a href="tel:2269983142">(226) 998-3142</a></p>
     </div>
 </footer>
 
