@@ -68,20 +68,7 @@
             text-decoration: none;
             color: blue; /* Inherit color from parent */
         }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2vw;
-            }
-            main {
-                padding: 30px 10px;
-            }
-            main h2 {
-                font-size: 18px;
-            }
-            main p {
-                font-size: 16px;
-            }
-        }
+        
         /* Top-left image */
         .top-left {
             position: absolute; /* Position it absolutely */
@@ -145,7 +132,98 @@
             margin: -1;
             line-height: .02vw;
         }
+        @media (max-width: 600px) {
+                        
+                        body {
+                            padding: 10px; /* Add padding for touch */
+                            min-height: 60vh;
+                        }
 
+                        /* header {
+                            flex-direction: column; 
+                            align-items: center; 
+                            text-align: center; 
+                        } */
+
+                        header img {
+                            height: auto; /* Responsive image */
+                            max-width: 30%; /* Limit width */
+                            margin-top: -6vw;
+                        }
+
+                        header h1 {
+                            font-size: 5vw; /* Responsive font size */
+                            margin: 2vw; /* Remove margin for mobile */
+                            margin-top: -9vw;
+                        }
+
+                        /* main {
+                            padding: 30px 10px; /* Adjust padding for smaller screens 
+                             flex-direction: column;  Stack main content vertically 
+                        } */
+
+                        .top-left img {
+                            width: 80vw; /* Full width for images */
+                            height: 80vw;
+                        }
+
+                        .bottom-left {
+                            height: 20vw;
+                            margin-bottom: 100vw;
+                            margin-left: -32vw;
+                            overflow: visible;
+                        }
+
+                        .bottom-left img {
+                            width: 90vw; /* Full width for images */
+                            height: 120vw;
+                            
+                        }
+
+                        .middle-circle {
+                            margin-bottom: 3vw;
+                            margin-right: 5vw;
+                        }
+
+                        .middle-circle img {
+                            width: 45vw; /* Full width for images */
+                            height: 45vw;
+                        }
+
+                        .circle-text {
+                            width: 50%; /* Full width for text sections */
+                           /* text-align: center;  Center text */
+                            margin: 5vw -3.5vw; /* Add margin for spacing */
+                            font-size: 3vw; /* Adjust font size */
+                        }
+
+                        .about-us {
+                            width: 100%; /* Full width for text sections */
+                           /* text-align: center;  Center text */
+                            margin: 50vw -30vw; /* Add margin for spacing */
+                            margin-top: 40vw;
+                            font-size: 3vw; /* Adjust font size */
+                            overflow: visible;
+                        }
+
+                        .bold-heading {
+                            width: 100%; /* Full width for text sections */
+                           /* text-align: center;  Center text */
+                            margin: 70vw -12vw; /* Add margin for spacing */
+                            font-size: 5vw; /* Adjust font size */
+                        }
+
+                        .footer-left, .footer-leftunder {
+                            font-size: 3vw; /* Larger font for readability */
+                           /* text-align: center;  Center footer text */
+                            margin: -7vw -2vw; /* Add margin for spacing */
+                            margin-bottom: 2vw;
+                        }
+
+                        a {
+                            font-size: 3vw; /* Increase link size for touch targets */
+                        }
+                }
     </style>
 </head>
 <body>
